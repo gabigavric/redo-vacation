@@ -1,23 +1,50 @@
 <html>
-  <head>
-    <title>Vacation Suggester</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="css.styles.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="jumbotron">
-        <h1>RE-DO</h1>
-      </div>
-      <p>this is practice for me to understand javascript</p>
-      <form action="/action_page.php">
-        First name: <input type="text" name="fname"><br>
-        Last name: <input type="text" name="lname"><br>
-        <input type="submit" value="Submit">
-      </form>
+
+<head>
+  <title>Vacation Suggester</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Vacation Suggester</h1>
     </div>
-  </body>
+
+    <h3>Do you prefer...</h3
+      <form>
+        <select class="form-control" id="temp">
+          <option id="hot">Hot Weather</option>
+          <option id="cold">Cold Weather</option>
+        </select>
+
+        <h3>Is rain your friend?</h3>
+    <select class="form-control" id="precipitation">
+            <option id= "rain">Let it rain!</option>
+            <option id= "norain">I melt in it</option>
+          </select>
+
+    <h3>Are you looking for solitude or human interaction?</h3>
+    <select class="form-control" id="interaction">
+              <option id="people">No people, It's why I'm on vacation!</option>
+              <option id="nopeople">I need some stimulation</option>
+            </select>
+
+    <div id="output">
+      <p>
+        <span id="outputSuggestion"></span>
+      </p>
+    </div>
+
+    <div class="btn">
+      <input class="button6" type="button" value="Submit">
+    </div>
+
+    </form>
+  </div>
+
 </html>
